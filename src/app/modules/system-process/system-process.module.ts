@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { HttpClientModule } from '@angular/common/http';
 
 import { NgxEchartsModule } from 'ngx-echarts';
 
@@ -15,11 +16,13 @@ import { BalancesChartComponent } from './components/balances-chart/balances-cha
 import { ProposedMissedChartComponent } from './components/proposed-missed-chart/proposed-missed-chart.component';
 import { DoubleBarChartComponent } from './components/double-bar-chart/double-bar-chart.component';
 import { PieChartComponent } from './components/pie-chart/pie-chart.component';
+import { BalancesComponent } from './pages/balances/balances.component';
 
 @NgModule({
-  declarations: [LogsComponent, MetricsComponent, BalancesChartComponent, ProposedMissedChartComponent, DoubleBarChartComponent, PieChartComponent],
+  declarations: [LogsComponent, MetricsComponent, BalancesChartComponent, ProposedMissedChartComponent, DoubleBarChartComponent, PieChartComponent, BalancesComponent],
   imports: [
     CommonModule,
+    HttpClientModule,
     SharedModule,
     MatButtonModule,
     MatIconModule,
